@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+/*set up display:flex on parent elements to control how the children will behave*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -12,14 +16,19 @@
 }
 
 ul {
-  /* this removes the dots on the list items*/
   list-style-type: none;
+  /*overide default padding and margin for ul*/
+  margin: 0px;
+  padding: 0px;
+  /*add distance between all ul's in page*/
+  gap: 35px;
+  /*flex can be used other than setting common properties... justify-content, wrapping, alignment*/
+  display: flex;
 }
 
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
-  /* this removes the line under the links */
   text-decoration: none;
 }
