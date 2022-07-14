@@ -52,29 +52,29 @@ ul {
 .header {
   display: flex;
   justify-content: space-evenly;
-  height: 70px;
+  align-items: center;
 }
 
-.links {
+.header .links {
   display: flex;
+  align-self: center;
+
   position: relative;
-  right:500px;
+  right: 250px
+}
+.header .notifications {
+  display: flex;
+  align-items: flex-end;
+
+  position: fixed;
+  right:60px;
 }
 
-li {
-  margin-left:10px
-}
+.header .profile-image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 
-.notifications {
-  position: absolute;
-  right: 70px;
-  top: 18px;
+  position: fixed;
+  right: 10px;
 }
-
-.profile-image {
-  position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-/*not a clean solution at all... retry this with flex*/
