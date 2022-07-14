@@ -27,6 +27,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  position: absolute;
+  left: 30px;
 }
 
 button {
@@ -46,3 +48,33 @@ a {
 ul {
   list-style-type: none;
 }
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+}
+
+.links {
+  display: flex;
+  position: relative;
+  right:500px;
+}
+
+li {
+  margin-left:10px
+}
+
+.notifications {
+  position: absolute;
+  right: 70px;
+  top: 18px;
+}
+
+.profile-image {
+  position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/*not a clean solution at all... retry this with flex*/
