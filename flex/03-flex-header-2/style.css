@@ -27,7 +27,6 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-  position: absolute;
   left: 30px;
 }
 
@@ -50,31 +49,18 @@ ul {
 }
 
 .header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: flex; 
+  justify-content: space-between;
 }
 
-.header .links {
+.first-part, .links, .second-part {
   display: flex;
-  align-self: center;
-
-  position: relative;
-  right: 250px
-}
-.header .notifications {
-  display: flex;
-  align-items: flex-end;
-
-  position: fixed;
-  right:60px;
 }
 
-.header .profile-image {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+li {
+  padding-right: 10px
+}
 
-  position: fixed;
-  right: 10px;
+.notifications {
+  margin-right:5px
 }
